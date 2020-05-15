@@ -1,0 +1,33 @@
+.paginatorButton {
+    background-color: transparent;
+    border: 1px solid;
+    border-radius: 15px;
+    color:  white;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    height: 30px;
+    margin: 0 5px;
+
+    &:hover,
+    &.selected {
+        background-color: white;
+        color: rgb(103, 125, 221); 
+    }
+
+    &.hidden {
+        display: none;
+    }
+
+    &.arrow {
+        width: 30px;
+
+        &:first-child {
+            margin: 0 auto 0 0;
+        }
+
+        &:last-child {
+            margin: 0 0 0 auto;
+        }
+    }
+}

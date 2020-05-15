@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import Paginator from './components/Paginator';
+import { Provider } from "mobx-react";
 import * as serviceWorker from './serviceWorker';
+import './styles/common.scss';
+import { stores } from "./stores";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Provider {...stores} >
+    <Paginator />
+  </Provider>,
   document.getElementById('root')
 );
 
